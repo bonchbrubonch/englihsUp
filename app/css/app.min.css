@@ -712,7 +712,7 @@ body.lock::before {
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: auto;
   max-width: 420px;
   width: 100%;
   z-index: 9999;
@@ -730,9 +730,9 @@ body.lock::before {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-transform: translateX(-100%);
-      -ms-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
   -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
   -o-transition: transform .3s;
@@ -920,9 +920,6 @@ body.lock::before {
     padding: 20px 50px;
     font-size: 16px;
   }
-  .intro__right {
-    max-width: 83%;
-  }
   .intro__inner {
     min-height: 615px;
   }
@@ -934,9 +931,6 @@ body.lock::before {
   }
   .intro__left {
     padding: 120px 0 50px;
-  }
-  .intro__right {
-    display: none;
   }
   .intro__left h1 {
     font-size: 25px;
@@ -953,6 +947,10 @@ body.lock::before {
     height: 250px;
     top: -98px;
     left: -66px;
+  }
+  .intro__right {
+    max-width: auto;
+    width: 150%;
   }
 }
 

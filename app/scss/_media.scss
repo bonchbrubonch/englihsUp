@@ -18,10 +18,6 @@
     font-size: 16px;
   }
 
-  .intro__right {
-    max-width: 83%;
-  }
-
   .intro__inner {
     min-height: 615px;
   }
@@ -36,9 +32,6 @@
     padding: 120px 0 50px;
   }
 
-  .intro__right {
-    display: none;
-  }
 
   .intro__left h1 {
     font-size: 25px;
@@ -57,6 +50,10 @@
     height: 250px;
     top: -98px;
     left: -66px;
+  }
+  .intro__right {
+    max-width: auto;
+    width: 150%;
   }
 }
 
