@@ -286,12 +286,25 @@
         font-weight: 800;
         line-height: 120%;
       }
-
+      position: relative;
       margin: 0 0 20px 0;
       font-size: 60px;
       font-weight: 700;
       line-height: 100%;
       text-transform: uppercase;
+      &::before{
+        position: absolute;
+        top: -152px;
+        left: -118px;
+        z-index: -1;
+        content: "";
+        width: 464px;
+        height: 464px;
+        background-image: url("../images/dest/icons/intro-title-bg.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
     }
 
     p {

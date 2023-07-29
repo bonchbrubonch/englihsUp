@@ -846,6 +846,7 @@ body.lock::before {
 }
 
 .intro__left h1 {
+  position: relative;
   margin: 0 0 20px 0;
   font-size: 60px;
   font-weight: 700;
@@ -857,6 +858,20 @@ body.lock::before {
   font-size: 80px;
   font-weight: 800;
   line-height: 120%;
+}
+
+.intro__left h1::before {
+  position: absolute;
+  top: -152px;
+  left: -118px;
+  z-index: -1;
+  content: "";
+  width: 464px;
+  height: 464px;
+  background-image: url("../images/dest/icons/intro-title-bg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .intro__left p {
@@ -932,6 +947,12 @@ body.lock::before {
   }
   .btn.btn--header {
     display: none;
+  }
+  .intro__left h1::before {
+    width: 250px;
+    height: 250px;
+    top: -98px;
+    left: -66px;
   }
 }
 

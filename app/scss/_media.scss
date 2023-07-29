@@ -52,6 +52,12 @@
   .btn.btn--header {
     display: none;
   }
+  .intro__left h1::before{
+    width: 250px;
+    height: 250px;
+    top: -98px;
+    left: -66px;
+  }
 }
 
 @media (max-width: 420px) {
