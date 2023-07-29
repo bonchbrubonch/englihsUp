@@ -45,18 +45,18 @@ body {
 body.lock {
   overflow: hidden;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, .8);
-    z-index: 999;
-  }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   left: 0;
+  //   width: 100vw;
+  //   height: 100vh;
+  //   background-color: rgba(0, 0, 0, .3);
+  //   z-index: 999;
+  // }
 }
 
 .container {
