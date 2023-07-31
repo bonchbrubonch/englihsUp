@@ -31,11 +31,19 @@
     color: #2E1644;
     box-shadow: 3px 5px 0px 0px #2E1644;
     background-color: #50C6FF;
+    &:hover{
+      box-shadow: none;
+      transform: translate(3px, 3px);
+    }
   }
 
   &--gradient {
     background: linear-gradient(117deg, #FC466B 0%, #3F5EFB 100%);
     box-shadow: 3px 5px 0px 0px #2E1644;
+    &:hover{
+      box-shadow: none;
+      transform: translate(3px, 3px);
+    }
   }
 
   &--white {

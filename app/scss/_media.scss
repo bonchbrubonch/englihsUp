@@ -1,3 +1,19 @@
+@media (max-width: 1200px) {
+  .about__box-img {
+    max-width: 300px;
+  }
+
+  .about__left {
+    margin: -30px 15px 0 -55px;
+    max-width: 480px;
+  }
+
+  .menu__right {
+    width: 620px;
+    margin: 0 -15px 0 auto;
+  }
+}
+
 @media (max-width: 1100px) {
   .intro__left h1 {
     font-size: 40px;
@@ -20,6 +36,154 @@
 
   .intro__inner {
     min-height: 615px;
+  }
+
+  .about__box-img {
+    display: none;
+  }
+
+  .change__inner {
+    flex-direction: column;
+    padding: 67px 30px 70px 50px;
+    min-height: 474px;
+  }
+
+  .change__left .list {
+    margin: 0;
+  }
+
+  .change__left,
+  .change__right .list {
+    max-width: 100%;
+  }
+
+  .change__right {
+    margin: 0 0 0 0;
+    padding: 0;
+  }
+
+  .change__inner::before {
+    background-image: url("../images/dest/icons/change-box-mob.svg");
+  }
+
+  .change__right-box {
+    max-width: 452px;
+    width: 100%;
+    margin: 35px 15px 16px 5px;
+  }
+
+  .change {
+    padding: 80px 0 80px;
+  }
+
+  .banner__inner {
+    padding: 45px 350px 44px 30px;
+  }
+
+  .banner__inner::before {
+    width: 327px;
+    height: 273px;
+    right: 25px;
+  }
+
+  .preference__list li {
+    width: calc(33.33333% - 24px);
+  }
+
+  .cost__inner::before {
+    width: 420px;
+    height: 455px;
+  }
+
+  .cost__inner {
+    padding: 94px 325px 50px 45px;
+  }
+
+  .cost .title strong,
+  .reviews .title strong,
+  .info .title strong {
+    letter-spacing: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .about__inner {
+    position: relative;
+    flex-direction: column-reverse;
+  }
+
+  .about__right {
+    margin: 0;
+  }
+
+  .about__right::before {
+    left: -10px;
+    right: -10px;
+    width: calc(100% + 20px);
+  }
+
+  .about__left {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    bottom: -43px;
+    max-width: 270px;
+  }
+
+  .title {
+    font-size: 26px;
+
+    strong {
+      font-size: 38px;
+    }
+  }
+
+  .menu__inner {
+    flex-direction: column;
+  }
+
+  .menu__left {
+    margin: 0 0 40px 0;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .menu__right {
+    width: 100%;
+    margin: 0;
+  }
+
+  .card-item__img {
+    height: 140px;
+    margin: 0 0 15px 0;
+  }
+
+  .card-item {
+    padding: 10px 10px 20px 10px;
+  }
+
+  .menu__right-slider .slick-slide {
+    margin: 0 10px 0 10px;
+  }
+
+  .menu {
+    padding: 45px 0 50px;
+  }
+
+  .banner {
+    padding: 50px 0;
+  }
+
+  .preference__list li {
+    width: calc(50% - 24px);
+  }
+
+  .cost {
+    padding: 50px 0 50px;
+  }
+
+  .cost .title {
+    margin: 0 0 -45px 25px;
   }
 }
 
@@ -45,15 +209,90 @@
   .btn.btn--header {
     display: none;
   }
-  .intro__left h1::before{
+
+  .intro__left h1::before {
     width: 250px;
     height: 250px;
     top: -98px;
     left: -66px;
   }
+
   .intro__right {
     max-width: auto;
     width: 150%;
+  }
+
+  .about__left {
+    position: inherit;
+  }
+
+  .about__item {
+    padding: 25px 26px 25px 25px;
+    max-width: 100%;
+
+    p {
+      margin: 0 0 8px 0;
+      font-size: 18px;
+    }
+  }
+
+  .about__left {
+    max-width: 315px;
+    margin: 0 auto;
+  }
+
+  .change {
+    padding: 50px 0 80px;
+  }
+
+  .change__inner {
+    padding: 67px 35px 70px 20px;
+  }
+
+  .change__right-box {
+    padding: 20px 15px 20px 15px;
+  }
+
+  .change__right-box p {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+  }
+
+  .menu .list {
+    margin: 0 0 30px 0;
+  }
+
+  .banner__inner {
+    padding: 45px 15px 44px 15px;
+  }
+
+  .banner__inner::before {
+    display: none;
+  }
+
+  .preference__list li {
+    padding: 23px 10px 35px 10px;
+  }
+
+  .preference .title::after,
+  .info .title::after {
+    width: 250px;
+    height: 250px;
+    top: -65px;
+    left: -66px;
+  }
+
+  .cost__inner::before {
+    width: 290px;
+    height: 315px;
+  }
+
+  .cost__inner {
+    padding: 70px 180px 50px 25px;
+  }
+
+  .reviews .container>p {
+    margin: 0 0 40px 0;
   }
 }
 
@@ -64,5 +303,17 @@
 
   .header__menu-close {
     margin: -85px 0 50px -20px;
+  }
+
+  .preference__list li {
+    width: 100%;
+  }
+
+  .cost__inner::before {
+    display: none;
+  }
+
+  .cost__inner {
+    padding: 94px 25px 50px 25px;
   }
 }
