@@ -56,15 +56,25 @@ $(function () {
   });
 
   $('.reviews__slider').slick({
-    infinite: false,
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
     dots: true,
+  
     responsive: [{
-        breakpoint: 900,
+        breakpoint: 1900,
         settings: {
           slidesToShow: 2,
+          centerMode: true,
+          variableWidth: true,
+        }
+      }, 
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 2,
+          variableWidth: false,
+          focusOnSelect: false,
         }
       },
       {
@@ -77,7 +87,6 @@ $(function () {
   });
 
   $('.info__slider').slick({
-    infinite: false,
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
@@ -103,10 +112,17 @@ $(function () {
     ]
   });
 
+  $(".accordeon dd").hide().prev().click(function () {
+    $(this).parents(".accordeon").find("dd").not(this).slideUp().prev().removeClass("active");
+    $(this).next().not(":visible").slideDown().prev().addClass("active");
+    $("dl").removeClass("open");
+    $(this).parent().toggleClass("open");
+  });
 
 
 
-
-
-
+  if ($('.slick-slider').length > 0) {
+    $(".slick-slider").slick("refresh");
+    $(".slick-slider").slick("setPosition");
+  }
 });

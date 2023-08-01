@@ -1,0 +1,139 @@
+.modal {
+  display: none;
+  padding: 0;
+  max-width: 450px;
+  width: 100%;
+  overflow: visible;
+  border-radius: 15px;
+
+  &__form {
+    position: relative;
+    padding: 40px 37px 40px 40px;
+    background-color: #080311;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+
+    &::before {
+      position: absolute;
+      top: -77px;
+      right: -106px;
+      content: "";
+      width: 260px;
+      height: 260px;
+      background-image: url("../images/dest/icons/intro-title-bg.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      opacity: .7;
+    }
+
+    &::after {
+      position: absolute;
+      top: 18px;
+      right: 25px;
+      content: "";
+      width: 100px;
+      height: 100px;
+      background-image: url("../images/dest/icons/form-cup.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+
+  h6 {
+    position: relative;
+    padding: 0 0 0 12px;
+    border-left: 2px solid #50C6FF;
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 100%;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin: 0 0 25px 0;
+    max-width: 315px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0;
+  }
+
+  &__input-wrap {
+    margin: 0 0 10px 0;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+
+    input {
+      padding: 8px 0;
+      width: 100%;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid #fff;
+      background-color: transparent;
+      color: #fff;
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 120%;
+      letter-spacing: 0.14px;
+    }
+
+    input::placeholder {
+      color: #fff;
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 120%;
+      letter-spacing: 0.14px;
+    }
+
+  }
+
+  .error {
+    span {
+      display: block;
+      margin: 4px 0 0 0;
+      font-size: 12px;
+      color: red;
+    }
+
+    input {
+      border-color: red;
+    }
+
+    input::placeholder {
+      color: red;
+    }
+  }
+
+  &__input-wrap+p {
+    max-width: 100%;
+    margin: 0;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0.1px;
+  }
+
+  .btn {
+    margin: 35px 0 0 0;
+    color: #fff;
+  }
+}
+
+.fancybox-slide--html {
+  padding: 70px 10px 40px 10px;
+}
+
+.fancybox-slide--html .fancybox-close-small {
+  padding: 0;
+  right: -10px;
+  top: -50px;
+}
