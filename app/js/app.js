@@ -83,9 +83,14 @@ $(function () {
         settings: {
           slidesToShow: 1,
           autoplay: true,
-          speed: 4000,
+          speed: 2000,
           autoplaySpeed: 0,
           cssEase: 'linear',
+          draggable: true,
+          focusOnSelect: true,
+          pauseOnHover: true,
+          swipe: true,
+          swipeToSlide: true,
         }
       }
     ]
