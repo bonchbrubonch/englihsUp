@@ -1989,6 +1989,7 @@ body.lock {
 }
 
 .menu__right-slider .slick-track {
+  margin: 0 0 0 -120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3843,6 +3844,9 @@ body.lock {
   }
   .card .title {
     font-size: 34px;
+  }
+  .menu__right-slider .slick-track {
+    margin: 0;
   }
 }
 

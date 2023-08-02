@@ -25,9 +25,7 @@ $(function () {
     arrows: false,
     dots: false,
     autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 0,
-    cssEase: 'linear',
+    autoplaySpeed: 5000,
     draggable: true,
     focusOnSelect: true,
     pauseOnHover: true,
@@ -38,9 +36,7 @@ $(function () {
         settings: {
           slidesToShow: 2.5,
           autoplay: true,
-          speed: 2000,
-          autoplaySpeed: 0,
-          cssEase: 'linear',
+          autoplaySpeed: 5000,
           draggable: true,
           focusOnSelect: true,
           pauseOnHover: true,
@@ -53,9 +49,7 @@ $(function () {
         settings: {
           slidesToShow: 3,
           autoplay: true,
-          speed: 2000,
-          autoplaySpeed: 0,
-          cssEase: 'linear',
+          autoplaySpeed: 5000,
           draggable: true,
           focusOnSelect: true,
           pauseOnHover: true,
@@ -68,9 +62,7 @@ $(function () {
         settings: {
           slidesToShow: 2,
           autoplay: true,
-          speed: 2000,
-          autoplaySpeed: 0,
-          cssEase: 'linear',
+          autoplaySpeed: 5000,
           draggable: true,
           focusOnSelect: true,
           pauseOnHover: true,
@@ -82,15 +74,6 @@ $(function () {
         breakpoint: 500,
         settings: {
           slidesToShow: 1,
-          autoplay: true,
-          speed: 2000,
-          autoplaySpeed: 0,
-          cssEase: 'linear',
-          draggable: true,
-          focusOnSelect: true,
-          pauseOnHover: true,
-          swipe: true,
-          swipeToSlide: true,
         }
       }
     ]
