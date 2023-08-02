@@ -5,7 +5,7 @@
 @import "modal";
 
 
- 
+
 /*start header=================*/
 .header {
   background-color: #080311;
@@ -177,6 +177,7 @@
     left: auto;
     max-width: 420px;
     width: 100%;
+    height: 100vh;
     z-index: 9999;
     display: flex;
     padding: 165px 44px 5px 78px;
@@ -296,6 +297,18 @@
   }
 }
 
+.header.sticky {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  z-index: 999;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, .15);
+}
+.margin-top{
+  margin: 86px 0 0 0;
+}
 /*end header=================*/
 
 /*start intro==================*/
@@ -1560,6 +1573,9 @@
         letter-spacing: 0.14px;
       }
 
+      a:hover {
+        text-decoration: underline;
+      }
     }
   }
 
@@ -1888,7 +1904,7 @@
 /*start card===========*/
 .card {
   padding: 46px 0 102px;
-  
+
   &__inner {
     position: relative;
     padding: 34px 20px 48px;
@@ -1991,7 +2007,6 @@
     letter-spacing: 0.14px;
   }
 
-  .btn {}
 }
 
 /*end card===========*/

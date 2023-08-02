@@ -155,7 +155,7 @@ $(function () {
   }
 });
 
-//параллакс
+//parallax
 document.addEventListener("mousemove", parallax);
 
 function parallax(event) {
@@ -166,3 +166,18 @@ function parallax(event) {
     shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
   });
 }
+
+//header
+const navOffset = $(".header").offset().top + 200;
+$(window).scroll(function () {
+
+  const scrolled = $(this).scrollTop();
+
+  if (scrolled > navOffset) {
+    $('header').addClass("sticky animate__animated animate__fadeInDown");
+    $('header').next().addClass("margin-top");
+  } else if (scrolled < navOffset) {
+    $('header').removeClass("sticky animate__animated animate__fadeInDown");
+    $('header').next().removeClass("margin-top");
+  }
+});
