@@ -2621,6 +2621,13 @@ body.lock {
 }
 
 .info-card__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
   padding: 10px 10px 25px 10px;
   height: 100%;
@@ -2686,6 +2693,9 @@ body.lock {
 }
 
 .info-card h6 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   padding: 0 10px;
   margin: 0 0 10px 0;
   font-size: 18px;
@@ -2694,6 +2704,9 @@ body.lock {
 }
 
 .info-card p {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   padding: 0 10px;
   margin: 0 0 30px 0;
   font-family: 'Roboto', sans-serif;
