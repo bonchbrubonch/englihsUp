@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="css/app.min.css">
 </head>
 
-<body>
+<body style="background-image: url('images/dest/content/main-bg.jpg');">
 
   <div class="wrapper">
     <div class="content">
@@ -184,7 +184,7 @@
               <p>
                 Додай англійську до свого меню, як десерт
               </p>
-              <a href="#" class="btn btn--white" data-fancybox data-src="#modal">
+              <a href="#" class="btn btn--white" data-fancybox data-src="#modal-1">
                 Замовити урок
               </a>
               <ul class="social">
@@ -268,6 +268,12 @@
       <section class="about">
         <div class="container">
           <div class="about__inner">
+            <div class="modal__parallax-wrap">
+              <img class="modal__parallax registration__paralax-1" src="images/dest/icons/parallax/about-1.svg"
+                alt="icon" value="2.5">
+              <img class="modal__parallax registration__paralax-2" src="images/dest/icons/parallax/about-2.svg"
+                alt="icon" value="1">
+            </div>
             <div class="about__left">
               <img src="images/dest/content/intro-1.png" alt="png">
             </div>
@@ -309,6 +315,14 @@
       <section class="change">
         <div class="container">
           <div class="change__inner">
+            <div class="modal__parallax-wrap">
+              <img class="modal__parallax registration__paralax-1" src="images/dest/icons/parallax/cake.svg" alt="icon"
+                value="1">
+              <img class="modal__parallax registration__paralax-2" src="images/dest/icons/parallax/cake-2.svg"
+                alt="icon" value="0.5">
+              <img class="modal__parallax registration__paralax-3" src="images/dest/icons/parallax/parallax-3.svg"
+                alt="icon" value="3">
+            </div>
             <div class="change__left">
               <h3 class="title">
                 <strong>Що може змінити</strong> <br>
@@ -344,6 +358,12 @@
       <section class="menu">
         <div class="container">
           <div class="menu__inner">
+            <div class="modal__parallax-wrap">
+              <img class="modal__parallax registration__paralax-1" src="images/dest/icons/parallax/parallax-4.svg"
+                alt="icon" value="2">
+              <img class="modal__parallax registration__paralax-2" src="images/dest/icons/parallax/parallax-5.svg"
+                alt="icon" value="0.5">
+            </div>
             <div class="menu__left">
               <h3 class="title">
                 наше
@@ -668,6 +688,12 @@
 
       <section class="preference">
         <div class="container">
+          <div class="modal__parallax-wrap">
+            <img class="modal__parallax registration__paralax-1" src="images/dest/icons/parallax/parallax-6.svg"
+              alt="icon" value="1">
+            <img class="modal__parallax registration__paralax-2" src="images/dest/icons/parallax/parallax-7.svg"
+              alt="icon" value="0.4">
+          </div>
           <h3 class="title">
             Чому
             <strong>з нами смачніше</strong>
@@ -771,6 +797,10 @@
 
       <section class="cost">
         <div class="container">
+          <div class="modal__parallax-wrap">
+            <img class="modal__parallax registration__paralax-1" src="images/dest/icons/parallax/cake.svg" alt="icon"
+              value="1">
+          </div>
           <h3 class="title">
             ціна
             <strong>оплата</strong>
@@ -794,6 +824,12 @@
 
       <section class="reviews">
         <div class="container">
+          <div class="modal__parallax-wrap">
+            <img class="modal__parallax registration__paralax-1" src="images/dest/icons/parallax/parallax-8.svg"
+              alt="icon" value="1">
+            <img class="modal__parallax registration__paralax-2" src="images/dest/icons/parallax/parallax-9.svg"
+              alt="icon" value="1.5">
+          </div>
           <h3 class="title">
             що кажуть
             <strong>про наші смаколики</strong>
@@ -804,7 +840,7 @@
           </p>
           <div class="reviews__slider">
             <div class="reviews__item">
-              <div class="reviews__item-inner">
+              <div id="review-1" class="reviews__item-inner">
                 <div class="reviews__item-box">
                   <div class="reviews__item-avatar">
                     <img src="images/dest/content/avatar-1.jpg" alt="avatar">
@@ -814,22 +850,25 @@
                     <p>Олександр</p>
                   </div>
                 </div>
-                <p>
-                  Odio diam facilisis enim fermentum consequat. Nulla morbi eu lacus egestas facilisis lorem elit.
-                  Viverra ac vitae lacus morbi. Congue faucibus tincidunt sed facilisis enim. Nunc tincidunt sit diam
-                  quam sagittis. Eleifend vel tincidunt maecenas sagittis. Bibendum ac at gravida bibendum ut
-                  pellentesque eget ullamcorper ultrices.
-
-                  Nam libero egestas integer elit suspendisse gravida at pellentesque sed. Sed dolor ultrices in lorem
-                  auctor viverra eu vitae. Viverra suscipit ullamcorper eget enim neque volutpat. Et magna sit nec vitae
-                  tincidunt. Fringilla vitae dictum adipiscing vel. Quis semper nam aliquam ut diam nec suspendisse eu.
-                  Cras lectus malesuada elit ornare morbi scelerisque.
-                </p>
-                <button class="reviews__read">Читати все</button>
+                <div class="reviews__text">
+                  <p>
+                    Odio diam facilisis enim fermentum consequat. Nulla morbi eu lacus egestas facilisis lorem elit.
+                    Viverra ac vitae lacus morbi. Congue faucibus tincidunt sed facilisis enim. Nunc tincidunt sit diam
+                    quam sagittis. Eleifend vel tincidunt maecenas sagittis. Bibendum ac at gravida bibendum ut
+                    pellentesque eget ullamcorper ultrices.
+                  </p>
+                  <p>
+                    Nam libero egestas integer elit suspendisse gravida at pellentesque sed. Sed dolor ultrices in lorem
+                    auctor viverra eu vitae. Viverra suscipit ullamcorper eget enim neque volutpat. Et magna sit nec
+                    vitae tincidunt. Fringilla vitae dictum adipiscing vel. Quis semper nam aliquam ut diam nec
+                    suspendisse eu. Cras lectus malesuada elit ornare morbi scelerisque.
+                  </p>
+                </div>
+                <button class="reviews__read" data-fancybox data-src="#review-1">Читати все</button>
               </div>
             </div>
             <div class="reviews__item">
-              <div class="reviews__item-inner">
+              <div id="review-2" class="reviews__item-inner">
                 <div class="reviews__item-box">
                   <div class="reviews__item-avatar">
                     <img src="images/dest/content/avatar-2.jpg" alt="avatar">
@@ -839,22 +878,25 @@
                     <p>Світлана</p>
                   </div>
                 </div>
-                <p>
-                  Odio diam facilisis enim fermentum consequat. Nulla morbi eu lacus egestas facilisis lorem elit.
-                  Viverra ac vitae lacus morbi. Congue faucibus tincidunt sed facilisis enim. Nunc tincidunt sit diam
-                  quam sagittis. Eleifend vel tincidunt maecenas sagittis. Bibendum ac at gravida bibendum ut
-                  pellentesque eget ullamcorper ultrices.
-
-                  Nam libero egestas integer elit suspendisse gravida at pellentesque sed. Sed dolor ultrices in lorem
-                  auctor viverra eu vitae. Viverra suscipit ullamcorper eget enim neque volutpat. Et magna sit nec vitae
-                  tincidunt. Fringilla vitae dictum adipiscing vel. Quis semper nam aliquam ut diam nec suspendisse eu.
-                  Cras lectus malesuada elit ornare morbi scelerisque.
-                </p>
-                <button class="reviews__read">Читати все</button>
+                <div class="reviews__text">
+                  <p>
+                    Odio diam facilisis enim fermentum consequat. Nulla morbi eu lacus egestas facilisis lorem elit.
+                    Viverra ac vitae lacus morbi. Congue faucibus tincidunt sed facilisis enim. Nunc tincidunt sit diam
+                    quam sagittis. Eleifend vel tincidunt maecenas sagittis. Bibendum ac at gravida bibendum ut
+                    pellentesque eget ullamcorper ultrices.
+                  </p>
+                  <p>
+                    Nam libero egestas integer elit suspendisse gravida at pellentesque sed. Sed dolor ultrices in lorem
+                    auctor viverra eu vitae. Viverra suscipit ullamcorper eget enim neque volutpat. Et magna sit nec
+                    vitae tincidunt. Fringilla vitae dictum adipiscing vel. Quis semper nam aliquam ut diam nec
+                    suspendisse eu. Cras lectus malesuada elit ornare morbi scelerisque.
+                  </p>
+                </div>
+                <button class="reviews__read" data-fancybox data-src="#review-2">Читати все</button>
               </div>
             </div>
             <div class="reviews__item">
-              <div class="reviews__item-inner">
+              <div id="review-3" class="reviews__item-inner">
                 <div class="reviews__item-box">
                   <div class="reviews__item-avatar">
                     <img src="images/dest/content/avatar-3.jpg" alt="avatar">
@@ -864,22 +906,25 @@
                     <p>Едуард</p>
                   </div>
                 </div>
-                <p>
-                  Odio diam facilisis enim fermentum consequat. Nulla morbi eu lacus egestas facilisis lorem elit.
-                  Viverra ac vitae lacus morbi. Congue faucibus tincidunt sed facilisis enim. Nunc tincidunt sit diam
-                  quam sagittis. Eleifend vel tincidunt maecenas sagittis. Bibendum ac at gravida bibendum ut
-                  pellentesque eget ullamcorper ultrices.
-
-                  Nam libero egestas integer elit suspendisse gravida at pellentesque sed. Sed dolor ultrices in lorem
-                  auctor viverra eu vitae. Viverra suscipit ullamcorper eget enim neque volutpat. Et magna sit nec vitae
-                  tincidunt. Fringilla vitae dictum adipiscing vel. Quis semper nam aliquam ut diam nec suspendisse eu.
-                  Cras lectus malesuada elit ornare morbi scelerisque.
-                </p>
-                <button class="reviews__read">Читати все</button>
+                <div class="reviews__text">
+                  <p>
+                    Odio diam facilisis enim fermentum consequat. Nulla morbi eu lacus egestas facilisis lorem elit.
+                    Viverra ac vitae lacus morbi. Congue faucibus tincidunt sed facilisis enim. Nunc tincidunt sit diam
+                    quam sagittis. Eleifend vel tincidunt maecenas sagittis. Bibendum ac at gravida bibendum ut
+                    pellentesque eget ullamcorper ultrices.
+                  </p>
+                  <p>
+                    Nam libero egestas integer elit suspendisse gravida at pellentesque sed. Sed dolor ultrices in lorem
+                    auctor viverra eu vitae. Viverra suscipit ullamcorper eget enim neque volutpat. Et magna sit nec
+                    vitae tincidunt. Fringilla vitae dictum adipiscing vel. Quis semper nam aliquam ut diam nec
+                    suspendisse eu. Cras lectus malesuada elit ornare morbi scelerisque.
+                  </p>
+                </div>
+                <button class="reviews__read" data-fancybox data-src="#review-3">Читати все</button>
               </div>
             </div>
             <div class="reviews__item">
-              <div class="reviews__item-inner">
+              <div id="review-1" class="reviews__item-inner">
                 <div class="reviews__item-box">
                   <div class="reviews__item-avatar">
                     <img src="images/dest/content/avatar-1.jpg" alt="avatar">
@@ -889,22 +934,25 @@
                     <p>Олександр</p>
                   </div>
                 </div>
-                <p>
-                  Odio diam facilisis enim fermentum consequat. Nulla morbi eu lacus egestas facilisis lorem elit.
-                  Viverra ac vitae lacus morbi. Congue faucibus tincidunt sed facilisis enim. Nunc tincidunt sit diam
-                  quam sagittis. Eleifend vel tincidunt maecenas sagittis. Bibendum ac at gravida bibendum ut
-                  pellentesque eget ullamcorper ultrices.
-
-                  Nam libero egestas integer elit suspendisse gravida at pellentesque sed. Sed dolor ultrices in lorem
-                  auctor viverra eu vitae. Viverra suscipit ullamcorper eget enim neque volutpat. Et magna sit nec vitae
-                  tincidunt. Fringilla vitae dictum adipiscing vel. Quis semper nam aliquam ut diam nec suspendisse eu.
-                  Cras lectus malesuada elit ornare morbi scelerisque.
-                </p>
-                <button class="reviews__read">Читати все</button>
+                <div class="reviews__text">
+                  <p>
+                    Odio diam facilisis enim fermentum consequat. Nulla morbi eu lacus egestas facilisis lorem elit.
+                    Viverra ac vitae lacus morbi. Congue faucibus tincidunt sed facilisis enim. Nunc tincidunt sit diam
+                    quam sagittis. Eleifend vel tincidunt maecenas sagittis. Bibendum ac at gravida bibendum ut
+                    pellentesque eget ullamcorper ultrices.
+                  </p>
+                  <p>
+                    Nam libero egestas integer elit suspendisse gravida at pellentesque sed. Sed dolor ultrices in lorem
+                    auctor viverra eu vitae. Viverra suscipit ullamcorper eget enim neque volutpat. Et magna sit nec
+                    vitae tincidunt. Fringilla vitae dictum adipiscing vel. Quis semper nam aliquam ut diam nec
+                    suspendisse eu. Cras lectus malesuada elit ornare morbi scelerisque.
+                  </p>
+                </div>
+                <button class="reviews__read" data-fancybox data-src="#review-1">Читати все</button>
               </div>
             </div>
             <div class="reviews__item">
-              <div class="reviews__item-inner">
+              <div id="review-2" class="reviews__item-inner">
                 <div class="reviews__item-box">
                   <div class="reviews__item-avatar">
                     <img src="images/dest/content/avatar-2.jpg" alt="avatar">
@@ -914,22 +962,25 @@
                     <p>Світлана</p>
                   </div>
                 </div>
-                <p>
-                  Odio diam facilisis enim fermentum consequat. Nulla morbi eu lacus egestas facilisis lorem elit.
-                  Viverra ac vitae lacus morbi. Congue faucibus tincidunt sed facilisis enim. Nunc tincidunt sit diam
-                  quam sagittis. Eleifend vel tincidunt maecenas sagittis. Bibendum ac at gravida bibendum ut
-                  pellentesque eget ullamcorper ultrices.
-
-                  Nam libero egestas integer elit suspendisse gravida at pellentesque sed. Sed dolor ultrices in lorem
-                  auctor viverra eu vitae. Viverra suscipit ullamcorper eget enim neque volutpat. Et magna sit nec vitae
-                  tincidunt. Fringilla vitae dictum adipiscing vel. Quis semper nam aliquam ut diam nec suspendisse eu.
-                  Cras lectus malesuada elit ornare morbi scelerisque.
-                </p>
-                <button class="reviews__read">Читати все</button>
+                <div class="reviews__text">
+                  <p>
+                    Odio diam facilisis enim fermentum consequat. Nulla morbi eu lacus egestas facilisis lorem elit.
+                    Viverra ac vitae lacus morbi. Congue faucibus tincidunt sed facilisis enim. Nunc tincidunt sit diam
+                    quam sagittis. Eleifend vel tincidunt maecenas sagittis. Bibendum ac at gravida bibendum ut
+                    pellentesque eget ullamcorper ultrices.
+                  </p>
+                  <p>
+                    Nam libero egestas integer elit suspendisse gravida at pellentesque sed. Sed dolor ultrices in lorem
+                    auctor viverra eu vitae. Viverra suscipit ullamcorper eget enim neque volutpat. Et magna sit nec
+                    vitae tincidunt. Fringilla vitae dictum adipiscing vel. Quis semper nam aliquam ut diam nec
+                    suspendisse eu. Cras lectus malesuada elit ornare morbi scelerisque.
+                  </p>
+                </div>
+                <button class="reviews__read" data-fancybox data-src="#review-2">Читати все</button>
               </div>
             </div>
             <div class="reviews__item">
-              <div class="reviews__item-inner">
+              <div id="review-3" class="reviews__item-inner">
                 <div class="reviews__item-box">
                   <div class="reviews__item-avatar">
                     <img src="images/dest/content/avatar-3.jpg" alt="avatar">
@@ -939,22 +990,25 @@
                     <p>Едуард</p>
                   </div>
                 </div>
-                <p>
-                  Odio diam facilisis enim fermentum consequat. Nulla morbi eu lacus egestas facilisis lorem elit.
-                  Viverra ac vitae lacus morbi. Congue faucibus tincidunt sed facilisis enim. Nunc tincidunt sit diam
-                  quam sagittis. Eleifend vel tincidunt maecenas sagittis. Bibendum ac at gravida bibendum ut
-                  pellentesque eget ullamcorper ultrices.
-
-                  Nam libero egestas integer elit suspendisse gravida at pellentesque sed. Sed dolor ultrices in lorem
-                  auctor viverra eu vitae. Viverra suscipit ullamcorper eget enim neque volutpat. Et magna sit nec vitae
-                  tincidunt. Fringilla vitae dictum adipiscing vel. Quis semper nam aliquam ut diam nec suspendisse eu.
-                  Cras lectus malesuada elit ornare morbi scelerisque.
-                </p>
-                <button class="reviews__read">Читати все</button>
+                <div class="reviews__text">
+                  <p>
+                    Odio diam facilisis enim fermentum consequat. Nulla morbi eu lacus egestas facilisis lorem elit.
+                    Viverra ac vitae lacus morbi. Congue faucibus tincidunt sed facilisis enim. Nunc tincidunt sit diam
+                    quam sagittis. Eleifend vel tincidunt maecenas sagittis. Bibendum ac at gravida bibendum ut
+                    pellentesque eget ullamcorper ultrices.
+                  </p>
+                  <p>
+                    Nam libero egestas integer elit suspendisse gravida at pellentesque sed. Sed dolor ultrices in lorem
+                    auctor viverra eu vitae. Viverra suscipit ullamcorper eget enim neque volutpat. Et magna sit nec
+                    vitae tincidunt. Fringilla vitae dictum adipiscing vel. Quis semper nam aliquam ut diam nec
+                    suspendisse eu. Cras lectus malesuada elit ornare morbi scelerisque.
+                  </p>
+                </div>
+                <button class="reviews__read" data-fancybox data-src="#review-3">Читати все</button>
               </div>
             </div>
             <div class="reviews__item">
-              <div class="reviews__item-inner">
+              <div id="review-3" class="reviews__item-inner">
                 <div class="reviews__item-box">
                   <div class="reviews__item-avatar">
                     <img src="images/dest/content/avatar-3.jpg" alt="avatar">
@@ -964,26 +1018,36 @@
                     <p>Едуард</p>
                   </div>
                 </div>
-                <p>
-                  Odio diam facilisis enim fermentum consequat. Nulla morbi eu lacus egestas facilisis lorem elit.
-                  Viverra ac vitae lacus morbi. Congue faucibus tincidunt sed facilisis enim. Nunc tincidunt sit diam
-                  quam sagittis. Eleifend vel tincidunt maecenas sagittis. Bibendum ac at gravida bibendum ut
-                  pellentesque eget ullamcorper ultrices.
-
-                  Nam libero egestas integer elit suspendisse gravida at pellentesque sed. Sed dolor ultrices in lorem
-                  auctor viverra eu vitae. Viverra suscipit ullamcorper eget enim neque volutpat. Et magna sit nec vitae
-                  tincidunt. Fringilla vitae dictum adipiscing vel. Quis semper nam aliquam ut diam nec suspendisse eu.
-                  Cras lectus malesuada elit ornare morbi scelerisque.
-                </p>
-                <button class="reviews__read">Читати все</button>
+                <div class="reviews__text">
+                  <p>
+                    Odio diam facilisis enim fermentum consequat. Nulla morbi eu lacus egestas facilisis lorem elit.
+                    Viverra ac vitae lacus morbi. Congue faucibus tincidunt sed facilisis enim. Nunc tincidunt sit diam
+                    quam sagittis. Eleifend vel tincidunt maecenas sagittis. Bibendum ac at gravida bibendum ut
+                    pellentesque eget ullamcorper ultrices.
+                  </p>
+                  <p>
+                    Nam libero egestas integer elit suspendisse gravida at pellentesque sed. Sed dolor ultrices in lorem
+                    auctor viverra eu vitae. Viverra suscipit ullamcorper eget enim neque volutpat. Et magna sit nec
+                    vitae tincidunt. Fringilla vitae dictum adipiscing vel. Quis semper nam aliquam ut diam nec
+                    suspendisse eu. Cras lectus malesuada elit ornare morbi scelerisque.
+                  </p>
+                </div>
+                <button class="reviews__read" data-fancybox data-src="#review-3">Читати все</button>
               </div>
             </div>
+
           </div>
         </div>
       </section>
 
       <section class="info">
         <div class="container">
+          <div class="modal__parallax-wrap">
+            <img class="modal__parallax registration__paralax-1" src="images/dest/icons/parallax/cake-3.svg"
+              alt="icon" value="0.5">
+            <img class="modal__parallax registration__paralax-2" src="images/dest/icons/parallax/parallax-10.svg"
+              alt="icon" value="1.5">
+          </div>
           <h3 class="title">
             найсмачніша
             <strong>інформація</strong>
@@ -1151,6 +1215,12 @@
 
       <section class="questions">
         <div class="container">
+          <div class="modal__parallax-wrap">
+            <img class="modal__parallax registration__paralax-1" src="images/dest/icons/parallax/cake.svg"
+              alt="icon" value="2">
+            <img class="modal__parallax registration__paralax-2" src="images/dest/icons/parallax/cake-2.svg"
+              alt="icon" value="0.5">
+          </div>
           <h3 class="title">
             Часті
             <strong>Питання</strong>
@@ -1262,6 +1332,10 @@
       <section class="contacts">
         <div class="container">
           <div class="contacts__inner">
+            <div class="modal__parallax-wrap">
+              <img class="modal__parallax registration__paralax-1" src="images/dest/icons/parallax/cake.svg"
+                alt="icon" value="1.4">
+            </div>
             <div class="contacts__left">
               <h3 class="title">
                 наші
@@ -1508,7 +1582,7 @@
     </div>
   </div>
 
-  <div id="modal" class="modal">
+  <div id="modal-1" class="modal">
     <form class="modal__form">
       <h6>
         Замовити дзвінок

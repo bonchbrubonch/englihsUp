@@ -137,3 +137,48 @@
   right: -10px;
   top: -50px;
 }
+
+.reviews__item-inner.fancybox-content {
+  position: relative;
+  max-width: 590px;
+  width: 100%;
+  background-color: #080311;
+  border-radius: 15px;
+  padding: 30px;
+  height: fit-content;
+  overflow: visible;
+ 
+  &::before{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    content: "";
+    width: 52px;
+    height: 52px;
+    background-image: url("../images/dest/icons/review-modal-bg.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .reviews__read {
+    display: none;
+  }
+
+  .reviews__text {
+    -ms-line-clamp: 100;
+    -webkit-line-clamp: 100;
+    line-clamp: 100;
+
+  }
+
+  &::after {
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    width: 100.5%;
+    height: 101%;
+    z-index: 1;
+    opacity: 1;
+  }
+}
