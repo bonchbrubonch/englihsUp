@@ -41,6 +41,11 @@ $(function () {
           speed: 2000,
           autoplaySpeed: 0,
           cssEase: 'linear',
+          draggable: true,
+          focusOnSelect: true,
+          pauseOnHover: true,
+          swipe: true,
+          swipeToSlide: true,
         }
       },
       {
@@ -51,6 +56,11 @@ $(function () {
           speed: 2000,
           autoplaySpeed: 0,
           cssEase: 'linear',
+          draggable: true,
+          focusOnSelect: true,
+          pauseOnHover: true,
+          swipe: true,
+          swipeToSlide: true,
         }
       },
       {
@@ -61,6 +71,11 @@ $(function () {
           speed: 2000,
           autoplaySpeed: 0,
           cssEase: 'linear',
+          draggable: true,
+          focusOnSelect: true,
+          pauseOnHover: true,
+          swipe: true,
+          swipeToSlide: true,
         }
       },
       {
