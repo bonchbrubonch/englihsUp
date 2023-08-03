@@ -307,9 +307,11 @@
   z-index: 999;
   box-shadow: 0 2px 20px 0 rgba(0, 0, 0, .15);
 }
-.margin-top{
+
+.margin-top {
   margin: 86px 0 0 0;
 }
+
 /*end header=================*/
 
 /*start intro==================*/
@@ -673,7 +675,6 @@
   border-radius: 15px;
   background: linear-gradient(109deg, rgba(252, 70, 107, 0.20) 0%, rgba(63, 94, 251, 0.20) 100%);
   overflow: hidden;
-  height: 100%;
 
   &::before {
     position: absolute;
@@ -725,6 +726,7 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 120%;
+    flex: 1 1 auto;
   }
 
   p {
@@ -1237,7 +1239,6 @@
 }
 
 .info-card {
-  height: 100%;
 
   &__inner {
     display: flex;
@@ -1669,6 +1670,12 @@
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -ms-flex-wrap: wrap;
   }
 }
 
@@ -1736,16 +1743,11 @@
     }
   }
 
-  &__img-large {
+  .container>img {
     height: 450px;
     border-radius: 20px;
-    overflow: hidden;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+    width: 100%;
+    object-fit: cover;
   }
 
   span {
@@ -1798,18 +1800,31 @@
 
   &__content {
     max-width: 810px;
-  }
-
-  &__img {
-    margin: 24px 0;
-    height: 340px;
-    border-radius: 20px;
-    overflow: hidden;
 
     img {
+      margin: 24px 0;
+      height: 340px;
+      border-radius: 20px;
       width: 100%;
-      height: 100%;
       object-fit: cover;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    position: relative;
+    padding: 0 0 0 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 3px;
+      width: 4px;
+      height: 93%;
+      background-color: #50C6FF;
     }
   }
 
@@ -2005,7 +2020,7 @@
   }
 
   p {
-    margin: 0 0 60px 0;
+    margin: 0 0 10px 0;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -2014,6 +2029,9 @@
     letter-spacing: 0.14px;
   }
 
+  .btn {
+    margin: 60px 0 0 0;
+  }
 }
 
 /*end card===========*/

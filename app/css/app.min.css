@@ -2010,7 +2010,6 @@ body.lock {
   background: -o-linear-gradient(341deg, rgba(252, 70, 107, 0.2) 0%, rgba(63, 94, 251, 0.2) 100%);
   background: linear-gradient(109deg, rgba(252, 70, 107, 0.2) 0%, rgba(63, 94, 251, 0.2) 100%);
   overflow: hidden;
-  height: 100%;
 }
 
 .card-item::before {
@@ -2069,6 +2068,9 @@ body.lock {
   font-size: 18px;
   font-weight: 600;
   line-height: 120%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 .card-item p {
@@ -2616,10 +2618,6 @@ body.lock {
           align-items: stretch;
 }
 
-.info-card {
-  height: 100%;
-}
-
 .info-card__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3096,14 +3094,14 @@ body.lock {
 .catalog__list {
   padding: 60px 0 0;
   margin: 0 0 0 -25px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 /*end catalog================*/
@@ -3174,15 +3172,10 @@ body.lock {
   right: -5%;
 }
 
-.article__img-large {
+.article .container > img {
   height: 450px;
   border-radius: 20px;
-  overflow: hidden;
-}
-
-.article__img-large img {
   width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -3250,18 +3243,34 @@ body.lock {
   max-width: 810px;
 }
 
-.article__img {
+.article__content img {
   margin: 24px 0;
   height: 340px;
   border-radius: 20px;
-  overflow: hidden;
-}
-
-.article__img img {
   width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.article h1,
+.article h2,
+.article h3,
+.article h4 {
+  position: relative;
+  padding: 0 0 0 20px;
+}
+
+.article h1::before,
+.article h2::before,
+.article h3::before,
+.article h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 4px;
+  height: 93%;
+  background-color: #50C6FF;
 }
 
 .article h1 {
@@ -3465,13 +3474,17 @@ body.lock {
 }
 
 .card p {
-  margin: 0 0 60px 0;
+  margin: 0 0 10px 0;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
   letter-spacing: 0.14px;
+}
+
+.card .btn {
+  margin: 60px 0 0 0;
 }
 
 /*end card===========*/
@@ -3850,7 +3863,7 @@ body.lock {
     font-size: 36px;
     line-height: 100%;
   }
-  .article__img-large {
+  .article .container > img {
     height: 350px;
   }
   .card {
@@ -4034,10 +4047,10 @@ body.lock {
   .article .social li {
     margin: 0 24px 0 0;
   }
-  .article__img-large {
+  .article .container > img {
     height: 300px;
   }
-  .article__img {
+  .article__content img {
     height: 220px;
   }
   .article span {

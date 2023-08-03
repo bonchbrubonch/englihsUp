@@ -266,7 +266,7 @@
     line-height: 100%;
   }
 
-  .article__img-large {
+  .article .container>img  {
     height: 350px;
   }
 
@@ -480,11 +480,11 @@
     margin: 0 24px 0 0;
   }
 
-  .article__img-large {
+  .article .container>img {
     height: 300px;
   }
 
-  .article__img {
+  .article__content img {
     height: 220px;
   }
 
