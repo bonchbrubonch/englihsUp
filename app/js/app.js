@@ -1,5 +1,20 @@
 $(function () {
 
+  jQuery(window).scroll(function () {
+    var $sections = $('section');
+    $sections.each(function (i, el) {
+      var top = $(el).offset().top - 100;
+      var bottom = top + $(el).height();
+      var scroll = $(window).scrollTop();
+      var id = $(el).attr('id');
+      if (scroll > top && scroll < bottom) {
+        $('a.active').removeClass('active');
+        $('a[href="#' + id + '"]').addClass('active');
+      }
+    })
+  });
+
+
   $(".header__menu-btn").on("click", function () {
     $(".header__menu").addClass("open");
     $(".header__menu-shadow").addClass("open");
@@ -84,8 +99,9 @@ $(function () {
     slidesToScroll: 1,
     arrows: false,
     dots: true,
-    // centerMode: true,
-    // variableWidth: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+  
     responsive: [{
         breakpoint: 1900,
         settings: {
@@ -122,6 +138,8 @@ $(function () {
     slidesToScroll: 1,
     arrows: false,
     dots: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
     responsive: [{
         breakpoint: 1100,
         settings: {

@@ -258,9 +258,33 @@ body.lock {
     background-size: 100% 100%;
     background-position: center;
     border-radius: 5px;
+    overflow: hidden;
     width: 28px;
     height: 28px;
     cursor: pointer;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: 1px;
+      right: 1px;
+      bottom: 1px;
+      left: 1px;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(109deg, rgba(252, 70, 107, 0.20) 0%, rgba(63, 94, 251, 0.20) 100%);
+      opacity: 0;
+      transition: linear .2s;
+    }
+
+    &:hover {
+      background-image: none;
+
+      &::after {
+        opacity: 1;
+      }
+    }
 
     &+li {
       margin-left: 15px;
@@ -269,6 +293,14 @@ body.lock {
 
   li.active {
     cursor: inherit;
+
+    &:hover {
+      background-image: url("../images/dest/content/pagination-bg.png");
+
+      &::after {
+        opacity: 0;
+      }
+    }
 
     a,
     span {
@@ -327,7 +359,8 @@ body.lock {
   height: 100%;
   z-index: -1;
 }
-.modal__parallax{
+
+.modal__parallax {
   position: absolute;
   z-index: -1;
 }
