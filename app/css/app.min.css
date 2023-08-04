@@ -1870,7 +1870,7 @@ body.lock {
 /*end about=================*/
 /*start change============*/
 .change {
-  padding: 0 0 45px;
+  padding: 0 0 10px;
 }
 
 .change .title {
@@ -1975,7 +1975,7 @@ body.lock {
 /*end change============*/
 /*start menu===================*/
 .menu {
-  padding: 45px 0 100px;
+  padding: 95px 0 100px;
   overflow: hidden;
 }
 
@@ -2164,7 +2164,7 @@ body.lock {
 /*end menu===================*/
 /*start banner==========*/
 .banner {
-  padding: 100px 0 65px;
+  padding: 100px 0 35px;
   overflow: hidden;
 }
 
@@ -2214,7 +2214,7 @@ body.lock {
 /*end banner==========*/
 /*start preference==========*/
 .preference {
-  padding: 60px 0 20px;
+  padding: 90px 0 20px;
 }
 
 .preference .container {
@@ -2603,7 +2603,7 @@ body.lock {
 /*end reviews========*/
 /*start info=============*/
 .info {
-  padding: 50px 0 50px;
+  padding: 50px 0 10px;
 }
 
 .info .container {
@@ -2815,7 +2815,7 @@ body.lock {
 /*end info=============*/
 /*start questions=========*/
 .questions {
-  padding: 50px 0 50px;
+  padding: 90px 0 10px;
 }
 
 .questions .container {
@@ -2998,7 +2998,7 @@ body.lock {
 /*end questions=========*/
 /*start contacts==========*/
 .contacts {
-  padding: 40px 0 50px;
+  padding: 90px 0 50px;
   overflow: hidden;
 }
 
@@ -3935,7 +3935,7 @@ body.lock {
     margin: 0 10px 0 10px;
   }
   .menu {
-    padding: 45px 0 50px;
+    padding: 95px 0 50px;
   }
   .banner {
     padding: 50px 0;
@@ -3944,7 +3944,7 @@ body.lock {
     width: calc(50% - 24px);
   }
   .cost {
-    padding: 50px 0 50px;
+    padding: 100px 0 50px;
   }
   .cost .title {
     margin: 0 0 -45px 25px;
@@ -4028,7 +4028,7 @@ body.lock {
     font-size: 18px;
   }
   .change {
-    padding: 50px 0 80px;
+    padding: 50px 0 40px;
   }
   .change__inner {
     padding: 67px 35px 70px 20px;
