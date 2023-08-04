@@ -2721,6 +2721,7 @@ body.lock {
   border-radius: 10px 10px 0px 0px;
   overflow: hidden;
   height: 180px;
+  width: 100%;
 }
 
 .info-card__img img {
@@ -3260,7 +3261,7 @@ body.lock {
 }
 
 .article .container > img {
-  height: 450px;
+  height: auto;
   border-radius: 20px;
   width: 100%;
   -o-object-fit: cover;
@@ -3332,7 +3333,7 @@ body.lock {
 
 .article__content img {
   margin: 24px 0;
-  height: 340px;
+  height: auto;
   border-radius: 20px;
   width: 100%;
   -o-object-fit: cover;
@@ -3967,9 +3968,6 @@ body.lock {
     font-size: 36px;
     line-height: 100%;
   }
-  .article .container > img {
-    height: 350px;
-  }
   .card {
     padding: 60px 0 90px;
   }
@@ -4158,12 +4156,6 @@ body.lock {
   }
   .article .social li {
     margin: 0 24px 0 0;
-  }
-  .article .container > img {
-    height: 300px;
-  }
-  .article__content img {
-    height: 220px;
   }
   .article span {
     margin: -17px 1px 0 20px;
