@@ -135,7 +135,7 @@ $(function () {
 
   $(".reviews__read").fancybox({
     afterClose: function () {
-      $(".reviews__item-inner").css("display", "block");
+      $(".reviews__item-inner").css("display", "flex");
     }
   });
 

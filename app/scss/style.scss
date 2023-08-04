@@ -1120,7 +1120,7 @@
     word-wrap: break-word;
     -webkit-box-orient: vertical;
     box-orient: vertical;
-    flex: 1 1 auto;
+    flex: 1 1 auto !important;
 
     p {
       margin: 0 0 15px 0 !important;
