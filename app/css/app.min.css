@@ -3250,6 +3250,21 @@ body.lock {
   max-width: 1045px;
 }
 
+.article .container::after {
+  position: absolute;
+  top: -145px;
+  right: -185px;
+  z-index: -1;
+  content: "";
+  width: 370px;
+  height: 370px;
+  background-image: url("../images/dest/icons/intro-title-bg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  opacity: .8;
+}
+
 .article .container .registration__paralax-1 {
   top: 34%;
   left: -7%;
@@ -3261,8 +3276,8 @@ body.lock {
 }
 
 .article .container > img {
-  height: auto;
-  border-radius: 20px;
+  height: auto !important;
+  border-radius: 20px !important;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -3333,8 +3348,8 @@ body.lock {
 
 .article__content img {
   margin: 24px 0;
-  height: auto;
-  border-radius: 20px;
+  height: auto !important;
+  border-radius: 20px !important;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
