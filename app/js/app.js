@@ -3,7 +3,7 @@ $(function () {
   jQuery(window).scroll(function () {
     var $sections = $('section');
     $sections.each(function (i, el) {
-      var top = $(el).offset().top - 200;
+      var top = $(anchor).offset().top - 200;
       var bottom = top + $(el).height();
       var scroll = $(window).scrollTop();
       var id = $(el).attr('id');
@@ -13,6 +13,17 @@ $(function () {
       }
     })
   });
+
+
+
+  $(".header__list a").click(function(e){
+		e.preventDefault();
+		var anchor = $(this).attr("href");
+		$("html, body").animate({
+		 scrollTop: $(anchor).offset().top - 50
+		}, 400);
+    
+	 });
 
 
   $(".header__list li a").on("click", function () {
